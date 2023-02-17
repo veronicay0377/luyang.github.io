@@ -1,0 +1,59 @@
+body {
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: 18px;
+}
+
+.wrapper {
+   width: 68%;
+   margin: auto;
+   background-color: rgb(251, 249, 239);
+}
+
+header, footer {
+   background-color: #FFE8D6;
+   text-align: left;
+}
+
+/* dot means class */
+.site-title {
+   color: #586B74;
+}
+
+/* hashtag means id */
+#my-image{
+   box-shadow: 0 0 2px 1px #7D939D
+}
+
+.list {
+   list-style-type: square;
+}
+
+.list li:nth-child(odd) {
+   background-color: #F1F5F9;
+}
+
+.navigation li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 120px;
+   background-color: #F1F5F9;
+ }
+ 
+ .navigation li {
+   display: block;
+   color: #000;
+   padding: 8px 16px;
+   text-decoration: none;
+ }
+
+ /* Change the link color on hover */
+ .navigation li:hover {
+   background-color: #CCF1F5;
+   color: rgb(157, 180, 216);
+ }
+ 
+
+ 
+
+
