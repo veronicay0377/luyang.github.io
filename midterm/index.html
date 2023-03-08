@@ -12,9 +12,9 @@
         <h1>Lone Starfish</h1>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>STORY</li>
-                <li>CONTACT</li>
+                <li><a href="home">HOME</a></li>
+                <li><a href="story">STORY</a></li>
+                <li><a href="contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -37,8 +37,33 @@
                 </ul>
             </nav>
         </section>
-    </main>
 
+        <section>
+            <h3>Contact to learn more</h3>
+            <form action="thanks.html" method="post">
+                <label for="yourname">Your Name</label>
+                <input type="text" id="yourname">
+
+                <label for="youremail">Your Email</label>
+                <input type="text" id="youremail">
+
+                <label for="yourmessage">Your Message</label>
+                <textarea name="yourmessage" id="message" cols="30" rows="10"></textarea> 
+            </form>
+
+            <h4>Would you like to visit the starfish?</h4>
+            <form action="thanks.html" method="quest">
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="yes" value="yes">
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="yes" value="no">
+
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="yes" value="maybe">      
+            </form>
+        </section>
+    </main>
 </body>
 <footer>
     <p>&copy;Copyright 2023</p>
