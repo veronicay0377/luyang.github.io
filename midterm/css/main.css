@@ -1,6 +1,7 @@
 /* sets the base size for all rem units to follow */
 html {
     font-size: 16px;
+    line-height: 1.2;
 }
 
 body {
@@ -85,20 +86,32 @@ h2 {
     font-size: 1.5rem;
 }
 
-main section .container img {
-    width: 250px;
-    height: 250px;
-    display: flex;
+.container {
+    padding-right: 5px;
 }
 
 /* floats the photo on the top-left corner of the content */
+main section .container img {
+    width: 250px;
+    height: 250px;
+    /* display: flex; */
+    float: left;
+    padding-top: 3px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+main section nav ul li {
+    line-height: 1;
+    margin-left: -25px;
+}
 
 
 /* style the footer */
 footer {
     text-align: right;
-    padding-bottom: 10px;
-    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
     /* padding: 10px/20px; */
 }
 
