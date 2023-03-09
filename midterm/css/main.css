@@ -16,7 +16,7 @@ body {
     /* background-position: center; */
     width: 900px;
     margin: auto; 
-    display: center;
+    /* display: center; */
 }
 
 /* adds a picture of starfish as the background of the header */
@@ -53,19 +53,22 @@ header h1 {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding-left: 0px;
  }
 
 .storymenu {
-    padding-left: 125px;
-    padding-right: 125px;
+    padding-left: 110px;
+    padding-right: 110px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
+    
     z-index: 1;
     position: relative;
 }
+
  .navigation ul li {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
     /* margin-top: opx; */
  }
  
@@ -77,15 +80,16 @@ header h1 {
  .navigation :hover {
     color:#AFD2CE;
  }
+
  a {
     text-decoration: none;
-    text-align: flex;
+    /* text-align: flex; */
  }
 
 /* style the main in body paragraph */
 main {
-    padding: 1px;
-    border-left: 1px;
+    padding: 0px;
+    border-left: 0px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -98,6 +102,7 @@ h2 {
 
 .container p {
     /* padding-right: 5px; */
+    padding-right: 5px;
     margin: 0px;
 }
 
