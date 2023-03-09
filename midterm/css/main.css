@@ -157,6 +157,7 @@ div .box {
 
 #yourmessage {
     height: 90px;
+    /* border: solid; */
 }
 
 h4 {
@@ -166,13 +167,26 @@ h4 {
     margin-left: 0px;   
 }
 
-.send-box {
+.send-button {
     width: 50px;
     height: 35px;
-    background-color:#D8EAE9;
+    border: 1px solid black;
     padding: 0px;
     margin: 10px;
     margin-left: 0px;
+}
+
+/* add hover to the send button */
+.send-button {
+    background-color:#D8EAE9;
+    color: black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.send-button:hover {
+    background-color: #AFD2CE;
+    color: white;
 }
 
 /* style the footer */
