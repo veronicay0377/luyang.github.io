@@ -1,7 +1,8 @@
 /* sets the base size for all rem units to follow */
 html {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.3;
+    /* font-weight: 300; */
 }
 
 body {
@@ -27,38 +28,44 @@ header {
     background-size: cover;
     /* background-position: center center; */
     display: flex;
+
 }
 
 /* puts the header in the center */
 header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 200;
     color: #FFFFFF;
     text-align: center;
     position: relative;
-    top: 55%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%,0%);
-    
+    transform: translate(-50%,0%);   
 }
 
 /* style the navigation */
 .navigation ul {
     /* text-decoration-color: black; */
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 530;
     list-style-type: none;
     display: flex;
-    /* position: relative; */
     justify-content: space-around;
  }
 
 .storymenu {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 125px;
+    padding-right: 125px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
+    z-index: 1;
+    position: relative;
 }
  .navigation ul li {
     padding-left: 50px;
     padding-right: 50px;
+    /* margin-top: opx; */
  }
  
  .navigation {
@@ -66,7 +73,6 @@ header h1 {
     justify-content: center;
  }
  .navigation :hover {
-    content: black;
     color:#AFD2CE;
  }
  a {
@@ -83,11 +89,14 @@ main {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-bottom: 5px;
 }
 
-.container {
-    padding-right: 5px;
+.container p {
+    /* padding-right: 5px; */
+    margin: 0px;
 }
 
 /* floats the photo on the top-left corner of the content */
@@ -101,19 +110,69 @@ main section .container img {
     padding-bottom: 20px;
 }
 
-main section nav ul li {
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+/* style the ul */
+.facts {
+    margin: 0px;
+}
+
+.facts li {
     line-height: 1;
+    margin: 0px;
     margin-left: -25px;
 }
 
+/* adds a box to the contact section */
+div .box {
+    width: 846px;
+    height: 410px;
+    padding: 15px;
+    padding-top: 20px;
+    line-height: 2;
+    border: 1px solid black;
+}
+
+.input-parent label, .input-parent input {
+    display: inline-block;
+}
+
+.input-child {
+    width: 842px;
+    height: 30px;
+    /* padding-top: 10px; */
+    border: 1px solid rgb(184, 181, 181);
+}
+
+#yourmessage {
+    height: 90px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 8px;
+    margin-left: 0px;   
+}
+
+.send-box {
+    width: 50px;
+    height: 35px;
+    background-color:#D8EAE9;
+    padding: 0px;
+    margin: 10px;
+    margin-left: 0px;
+}
 
 /* style the footer */
 footer {
     text-align: right;
+    padding: 15px;
     padding-bottom: 20px;
     padding-right: 30px;
     /* padding: 10px/20px; */
 }
-
-
-

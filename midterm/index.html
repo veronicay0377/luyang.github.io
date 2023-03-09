@@ -33,7 +33,7 @@
             <section>
                 <h3>Facts About Starfish</h3>
                 <nav>
-                    <ul>
+                    <ul class="facts">
                         <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
                         <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                         <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
@@ -45,29 +45,31 @@
             <section>
                 <h3 id="contact">Contact to learn more</h3>
                 <!-- add a box to the form -->
-                <form action="thanks.html" method="post">
-                    <label for="yourname">Your Name</label>
-                    <input type="text" id="yourname">
-    
-                    <label for="youremail">Your Email</label>
-                    <input type="text" id="youremail">
-    
-                    <label for="yourmessage">Your Message</label>
-                    <textarea name="yourmessage" id="message" cols="30" rows="10"></textarea> 
-                </form>
-    
-                <h4>Would you like to visit the starfish?</h4>
-                <form action="thanks.html" method="quest">
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="yes" value="yes">
-    
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="yes" value="no">
-    
-                    <label for="maybe">Maybe</label>
-                    <input type="radio" id="maybe" name="yes" value="maybe">      
-                </form>
-                <button>send</button>
+                <div class="box">
+                    <form action="#" method="post" class="input-parent">
+                        <label for="yourname">Your Name</label>
+                        <input type="text" id="yourname" class="input-child">
+        
+                        <label for="youremail">Your Email</label>
+                        <input type="text" id="youremail" class="input-child">
+        
+                        <label for="yourmessage">Your Message</label>
+                        <textarea id="yourmessage" class="input-child"></textarea> 
+                    </form>
+        
+                    <h4>Would you like to visit the starfish?</h4>
+                    <form action="#" method="post">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="yes" value="yes">
+        
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="yes" value="no">
+        
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="yes" value="maybe">      
+                    </form>
+                    <button class="send-box">send</button>
+                </div>
             </section>
         </main>
         <footer>
