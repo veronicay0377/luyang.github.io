@@ -61,7 +61,6 @@ header h1 {
     padding-right: 110px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
-    
     z-index: 1;
     position: relative;
 }
