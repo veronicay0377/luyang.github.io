@@ -59,6 +59,7 @@ header h1 {
 .storymenu {
     padding-left: 110px;
     padding-right: 110px;
+    padding-top: 1rem;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
     z-index: 1;
