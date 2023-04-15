@@ -23,10 +23,6 @@ body {
 header {
     width: 900px;
     height: 300px;
-    /* background-image: url("../images/lone-starfish-wide.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* position: relative; */
 }
 
 .banner {
@@ -47,9 +43,7 @@ header h1 {
     text-align: center;
     position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translate(-50%,0%); 
-    z-index: 0; 
+    left: 35%;
 }
 
 /* style the navigation */
@@ -62,6 +56,7 @@ header h1 {
     display: flex;
     justify-content: space-around;
     padding-left: 0px;
+    margin-bottom: 20px;
  }
 
 .storymenu {
@@ -96,6 +91,7 @@ header h1 {
 
 /* style the main in body paragraph */
 main {
+    margin-top: 80px;
     padding: 0px;
     border-left: 0px;
     margin-left: 10px;
