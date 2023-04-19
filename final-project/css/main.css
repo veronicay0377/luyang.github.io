@@ -1,4 +1,9 @@
-/* reset the css code */
+/* reset the css file */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,10 +82,38 @@ h3 {
 }
 
 header {
-    background-color: rgb(48, 39, 34);
+    background-color: #222;
 }
 
-.logo {
-    
+.logocontainer {
+    background-color: #c78c06;
+    width: 100%;
 }
+
+.navigation {
+    text-align: center;
+}
+
+.navigation li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: #c78c06; */
+    color: #c78c06;
+}
+.home {
+    background-color: #c78c06;
+    color: black;
+}
+
+.find {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
 
