@@ -134,6 +134,14 @@ header .home {
     padding-bottom: 10px;   
 }
 
+button {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+
 
 
 
