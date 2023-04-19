@@ -49,15 +49,12 @@ table {
 }
 
 /* sets the base size for all rem units to follow */
-html {
-    font-size: 16px;
-    line-height: 1.5;
-    /* height: 1px; */
-}
 
 body {
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     background-color: #f6f4ee;
+    line-height: 1.5;
 }
 
 h1 {
@@ -77,8 +74,8 @@ h3 {
 
 .wrapper {
     /* width: 900px; */
-    margin: auto; 
-    padding: 0%, 10px;
+    margin: 0 auto; 
+    padding: 0 10px;
 }
 
 header {
@@ -95,12 +92,13 @@ header {
 }
 
 .navigation li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     /* background-color: #c78c06; */
     color: #c78c06;
 }
-.home {
+
+header .home {
     background-color: #c78c06;
     color: black;
 }
@@ -108,7 +106,36 @@ header {
 .find {
     text-align: center;
     width: 100%;
+    padding-bottom: 15px;
 }
+
+.welcome {
+    background-image: url("/final-project/images/main-banner.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.welcome .wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.welcome .wrapper h1 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.welcome .wrapper p {
+    color: white;
+    padding-bottom: 10px;   
+}
+
+
+
 
 
 
