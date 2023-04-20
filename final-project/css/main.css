@@ -247,19 +247,12 @@ button {
 
 .johnspic, .bobspic {
     width: 100%;
+    padding-top: 10px;
 }
 
 /* style the web contact section */
 .contact {
     padding-top: 50px;
-}
-
-.contact h3 {
-    /* padding-top: 10px; */
-}
-
-.info {
-    /* display: table-column; */
 }
 
 .message input, .message textarea {
