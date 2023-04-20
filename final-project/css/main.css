@@ -82,6 +82,12 @@ h5 {
     padding: 0 10px;
 }
 
+@media screen and (min-width: 760px) {
+    .wrapper {
+        margin: 0 30px;
+    }
+}
+
 /* style the navigation section */
 header {
     background-color: #222;
@@ -92,11 +98,11 @@ header {
     width: 100%;
 }
 
-.navigation {
+.navlist {
     text-align: center;
 }
 
-.navigation li {
+.navlist li {
     padding-top: 15px;
     padding-bottom: 15px;
     /* background-color: #c78c06; */
@@ -123,14 +129,52 @@ header .home {
 
 .fa-magnifying-glass {
     /* flex-basis: calc(5% - 4px); */
-    border: solid 1px #c78c06 ;
+    border: 1px solid #c78c06 ;
     color: #c78c06;
     padding: 5px;
 }
 
+@media screen and (min-width: 760px) {
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 10px;
+      /* margin: 0px 30px; */
+    }
+
+    .logocontainer {
+        background-color: none;
+        width: 98px;
+        height: 98px;
+    }
+
+    .navlist {
+        display: flex;
+        justify-content: space-around;
+        margin: 22px 20px;
+    }
+
+    .navlist li {
+        background-color: #222;
+        justify-content: space-between;
+        /* height: 98px; */
+        padding: 15px 30px;
+        width: max-content;
+    }
+
+    .navlist .home {
+        background-color: #c78c06;
+    }
+
+    .find {
+        margin-top: 26px;
+        width: 150px;
+    }
+}
+
 /* style the welcome section */
 .welcome {
-    background-image: url("/final-project/images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");
     /* background-repeat: no-repeat; */
     background-position: center center;
     background-size: cover;
@@ -187,6 +231,14 @@ button {
     padding-bottom: 10px;
 }
 
+/* float the img on the left on the mobile version */
+@media screen and (min-width: 760px) {
+    .about .wrapper img {
+        width: 444px;
+        float: left;
+    }
+}
+
 /* style the web services section with flex */
 .services {
     padding-top: 15px;
@@ -219,6 +271,45 @@ button {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+/* style the services section web with grid*/
+@media screen and (min-width: 760px) {
+    .serviceboxes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);   
+    }
+
+    .digital {
+        grid-column: 1 / span 3;
+        margin-right: 5px;
+    }
+    
+    .marketing {
+        grid-column: 4 / span 3;
+        margin-left: 5px;
+      }
+    
+    .video {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+        margin-right: 5px;
+    }
+
+    .web {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 2;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .print {
+        grid-column: 5 / span 2;
+        grid-row: 2 / span 2;
+        margin-left: 5px;
+    }
+}
+
+
 /* style the web vision section */
 .vision {
     background-image: url("/final-project/images/vision.jpg");
@@ -242,7 +333,7 @@ button {
     padding-bottom: 10px;
 }
 
-/* style the web team section with flex */
+/* style the web team section with grid*/
 .team {
     display: flex;
     flex-direction: column;
@@ -263,6 +354,39 @@ button {
     padding-top: 10px;
 }
 
+/* style the mobile team section with grid*/
+@media screen and (min-width: 760px) {
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);  
+        grid-template-areas: 
+        "johnspic johnbio"
+        "bobbio bobspic"; 
+    }
+
+    .johnspic {
+        grid-area: johnspic;
+        padding-top: 0;
+    }
+
+    .johnbio {
+        grid-area: johnbio;
+        padding: 0 10;
+    }
+
+    .bobbio {
+        grid-area: bobbio;
+        padding: 0 10;
+    }
+
+    .bobspic {
+        grid-area: bobspic;
+        padding-top: 0;
+    }
+}   
+
 /* style the web contact section */
 .contact {
     padding-top: 50px;
@@ -282,7 +406,7 @@ button {
 }
 
 .team h5 {
-    border-bottom: solid 2px #c78c06;
+    border-bottom: 2px solid #c78c06;
 }
 
 /* style the timetable */
@@ -294,7 +418,7 @@ button {
 }
 
 th, td {
-    border: solid 1px black;
+    border: 1px solid black;
     /* text-align: center; */
     padding: 5px;
 }
@@ -324,8 +448,4 @@ footer p {
 .lastline a {
     color: #c78c06;
 }
-
-
-
-
 

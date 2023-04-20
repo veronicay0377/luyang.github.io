@@ -16,13 +16,13 @@
 </head>
 <body>
     <header> 
-        <div class="wrapper">
+        <div class="wrapper navigation">
             <div class="logocontainer">
                 <img src="images/logo.png" alt="logo" class="logo">
             </div>
             <!-- the web version should have a horizontal flex navigation -->
             <nav>
-                <ul class="navigation"> 
+                <ul class="navlist"> 
                     <li class="home">Home</li>
                     <li>About Us</li>
                     <li>Services</li>
@@ -55,10 +55,13 @@
         <section class="about">
             <div class="wrapper">
                 <img src="images/about-us.jpg" alt="about us">
-                <h2>About Us</h2>
-                <!-- the image is on the left of the paragraph -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis! Quam corrupti culpa repellat eligendi tempore. Explicabo, voluptatum. Velit eaque tempore nulla beatae? Fugit, voluptatibus facilis. Voluptate distinctio modi nam?</p>
-                <p>A sequi maxime excepturi hic at labore vero error, dolorum quos magni inventore impedit eveniet ad reprehenderit ducimus iste quisquam illum, in aspernatur saepe! Consequatur possimus minima tenetur ea non!</p>
+                <div class="abouttext">
+                    <h2>About Us</h2>
+                    <!-- the image is on the left of the paragraph -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis! Quam corrupti culpa repellat eligendi tempore. Explicabo, voluptatum. Velit eaque tempore nulla beatae? Fugit, voluptatibus facilis. Voluptate distinctio modi nam?</p>
+                    <p>A sequi maxime excepturi hic at labore vero error, dolorum quos magni inventore impedit eveniet ad reprehenderit ducimus iste quisquam illum, in aspernatur saepe! Consequatur possimus minima tenetur ea non!</p>
+                </div>
+                
             </div>                
         </section>
 
@@ -66,36 +69,38 @@
             <div class="services">
                 <h2>Our Services</h2>
                 <!-- add grid to service blocks-->
-                <div class="digital">
-                    <img src="images/digital.jpg" alt="digital">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum eaque blanditiis eos doloribus quis labore? Eius sunt eaque quas iusto officia. Accusantium cumque quasi autem dolorem saepe placeat odit magni.</p>
-                    <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
-                </div>
-                <div class="marketing">
-                    <img src="images/marketing.jpg" alt="marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sit ratione eos aliquam nobis possimus, eaque fuga? Consequuntur, eos voluptatibus. Dignissimos voluptate eius repellendus fugit praesentium magnam dolor hic accusamus.</p>
-                    <button>Marketing Plans <i class="fa-solid fa-caret-right"> </i></button>
-                </div>
-                <div class="video">
-                    <img src="images/video.jpg" alt="video">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur amet illum tempora nisi ab nobis ratione omnis commodi quibusdam suscipit, nostrum, vero distinctio. Quos quibusdam qui optio labore minima.</p>
-                    <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
-                </div>
-                <div class="web">
-                    <img src="images/web.jpg" alt="web">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium? Voluptas doloremque sit assumenda ad repellat optio omnis, eius doloribus obcaecati odio numquam vero tempora dignissimos sequi error nesciunt.</p>
-                    <button>Web Plans <i class="fa-solid fa-caret-right"></i></button>
-                </div>
-                <div class="print">
-                    <img src="images/print.jpg" alt="print">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium? Voluptas doloremque sit assumenda ad repellat optio omnis, eius doloribus obcaecati odio numquam vero tempora dignissimos sequi error nesciunt.</p>
-                    <button>Print Plans <i class="fa-solid fa-caret-right"></i></button> 
-                </div>
+                <div class="serviceboxes">
+                    <div class="digital">
+                        <img src="images/digital.jpg" alt="digital">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium?</p>
+                        <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    <div class="marketing">
+                        <img src="images/marketing.jpg" alt="marketing">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium?</p>
+                        <button>Marketing Plans <i class="fa-solid fa-caret-right"> </i></button>
+                    </div>
+                    <div class="video">
+                        <img src="images/video.jpg" alt="video">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium? Voluptas doloremque sit assumenda ad repellat optio omnis, eius doloribus obcaecati odio numquam vero tempora dignissimos sequi error nesciunt.</p>
+                        <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    <div class="web">
+                        <img src="images/web.jpg" alt="web">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium? Voluptas doloremque sit assumenda ad repellat optio omnis, eius doloribus obcaecati odio numquam vero tempora dignissimos sequi error nesciunt.</p>
+                        <button>Web Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    <div class="print">
+                        <img src="images/print.jpg" alt="print">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus praesentium? Voluptas doloremque sit assumenda ad repellat optio omnis, eius doloribus obcaecati odio numquam vero tempora dignissimos sequi error nesciunt.</p>
+                        <button>Print Plans <i class="fa-solid fa-caret-right"></i></button> 
+                    </div>
+                </div>              
             </div>               
         </section>
 
