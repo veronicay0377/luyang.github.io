@@ -85,7 +85,7 @@ h5 {
 /* style the web wrapper width */
 @media screen and (min-width: 760px) {
     .wrapper {
-        margin: 0 30px;
+        margin: 0 40px;
     }
 }
 
@@ -238,9 +238,6 @@ button {
 
 /* float the img on the left on the web version */
 @media screen and (min-width: 760px) {
-    .about {
-        /* display: flex; */
-    }
     .about img {
         width: 444px;
         float: left;
@@ -252,6 +249,7 @@ button {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .services h2 {
@@ -300,20 +298,20 @@ button {
     .video {
         grid-column: 1 / span 2;
         grid-row: 2 / span 2;
-        margin-right: 5px;
+        margin-right: 6px;
     }
 
     .web {
         grid-column: 3 / span 2;
         grid-row: 2 / span 2;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 
     .print {
         grid-column: 5 / span 2;
         grid-row: 2 / span 2;
-        margin-left: 5px;
+        margin-left: 6px;
     }
 }
 
@@ -324,7 +322,7 @@ button {
     background-size: cover;
     padding-top: 30px;
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .vision h3, .vision p {
@@ -410,7 +408,7 @@ button {
 }
 
 .contact .info .message button {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background-color: black;
     color: #c78c06;
     padding: 3px;
@@ -462,7 +460,7 @@ iframe {
     }
     .hours {
         grid-area: hours;
-        /* padding: 0 10; */
+        margin-top: 10px;
     }
 
     .location {
@@ -491,5 +489,3 @@ footer p {
 .lastline a {
     color: #c78c06;
 }
-
-
