@@ -48,8 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* sets the base size for all rem units to follow */
-
+/* set the base size for all rem units to follow */
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -71,13 +70,14 @@ h3 {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+/* set the wrapper width of the whole body */
 .wrapper {
     /* width: 900px; */
     margin: 0 auto; 
     padding: 0 10px;
 }
 
+/* style the navigation section */
 header {
     background-color: #222;
 }
@@ -103,12 +103,25 @@ header .home {
     color: black;
 }
 
-.find {
-    text-align: center;
-    width: 100%;
+.find form {
+    align-items: center;
+    /* width: 100%; */
     padding-bottom: 15px;
+    display: flex;
+}
+.find form input {
+    width: 97%;
+    height: 22px;
 }
 
+.fa-magnifying-glass {
+    /* flex-basis: calc(5% - 4px); */
+    border: solid 1px #c78c06 ;
+    color: #c78c06;
+    padding: 5px;
+}
+
+/* style the welcome section */
 .welcome {
     background-image: url("/final-project/images/main-banner.jpg");
     /* background-repeat: no-repeat; */
@@ -140,6 +153,62 @@ button {
     color: white;
     border: 0;
 }
+
+.connect {
+    color: black;
+    background-color: #c78c06;
+}
+
+/* style the about section with flex on mobile version */
+.about {
+    background-color: #ffe6ac;
+    padding: 15px;
+}
+
+.about .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.about img {
+    padding-bottom: 15px;
+}
+
+.about h2 {
+    padding-bottom: 10px;
+}
+
+.services {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.digital, .marketing, .video, .web, .print {
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services h3, .services p {
+    padding: 10px;
+}
+
+.services button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 
 
 
