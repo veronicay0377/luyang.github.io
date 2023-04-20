@@ -77,7 +77,6 @@ h5 {
 
 /* set the mobile wrapper width of the whole body */
 .wrapper {
-    /* width: 900px; */
     margin: 0 auto; 
     padding: 0 10px;
 }
@@ -85,7 +84,7 @@ h5 {
 /* style the web wrapper width */
 @media screen and (min-width: 760px) {
     .wrapper {
-        margin: 0 40px;
+        width: 90vw;
     }
 }
 
@@ -106,7 +105,6 @@ header {
 .navlist li {
     padding-top: 15px;
     padding-bottom: 15px;
-    /* background-color: #c78c06; */
     color: #c78c06;
 }
 
@@ -117,7 +115,6 @@ header .home {
 
 .find form {
     align-items: center;
-    /* width: 100%; */
     padding-top: 10px;
     padding-bottom: 15px;
     display: flex;
@@ -129,7 +126,6 @@ header .home {
 }
 
 .fa-magnifying-glass {
-    /* flex-basis: calc(5% - 4px); */
     border: 1px solid #c78c06 ;
     color: #c78c06;
     padding: 5px;
@@ -137,10 +133,10 @@ header .home {
 
 @media screen and (min-width: 760px) {
     .navigation {
+      text-align: center;
       display: flex;
       justify-content: space-between;
-      padding: 30px 10px;
-      /* margin: 0px 30px; */
+      padding: 40px 20px;
     }
 
     .logocontainer {
@@ -167,13 +163,9 @@ header .home {
         background-color: #c78c06;
     }
 
-    .find {
+    .navigation .find {
         margin-top: 26px;
         width: 15vw;
-    }
-    
-    .find input {
-        width: 20vw;
     }
 }
 
