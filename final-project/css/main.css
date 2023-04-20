@@ -50,7 +50,7 @@ table {
 
 /* set the base size for all rem units to follow */
 body {
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
     line-height: 1.5;
@@ -169,13 +169,14 @@ button {
 /* style the about section with flex on mobile version */
 .about {
     background-color: #ffe6ac;
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .about .wrapper {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .about img {
@@ -193,6 +194,10 @@ button {
     flex-direction: column;
 }
 
+.services h2 {
+    padding-bottom: 10px;
+}
+
 .digital, .marketing, .video, .web, .print {
     background-color: #ffe6ac;
     margin-bottom: 10px;
@@ -204,6 +209,10 @@ button {
 
 .services h3, .services p {
     padding: 10px;
+}
+
+.services p {
+    padding-top: 0;
 }
 
 .services button {
@@ -264,6 +273,7 @@ button {
 }
 
 .contact .info .message button {
+    font-size: 1.1rem;
     background-color: black;
     color: #c78c06;
     padding: 3px;
@@ -309,6 +319,10 @@ footer p {
 
 .lastline {
     padding-top: 0;
+}
+
+.lastline a {
+    color: #c78c06;
 }
 
 
