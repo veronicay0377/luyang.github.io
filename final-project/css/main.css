@@ -48,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* set the base size for all rem units to follow */
+/* set the base size for all rem units to follow on mobile*/
 body {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -75,20 +75,21 @@ h5 {
     font-weight: bold;
 }
 
-/* set the wrapper width of the whole body */
+/* set the mobile wrapper width of the whole body */
 .wrapper {
     /* width: 900px; */
     margin: 0 auto; 
     padding: 0 10px;
 }
 
+/* style the web wrapper width */
 @media screen and (min-width: 760px) {
     .wrapper {
         margin: 0 30px;
     }
 }
 
-/* style the navigation section */
+/* style the mobile navigation section */
 header {
     background-color: #222;
 }
@@ -168,11 +169,15 @@ header .home {
 
     .find {
         margin-top: 26px;
-        width: 150px;
+        width: 15vw;
+    }
+    
+    .find input {
+        width: 20vw;
     }
 }
 
-/* style the welcome section */
+/* style the mobile welcome section with background image*/
 .welcome {
     background-image: url("../images/main-banner.jpg");
     /* background-repeat: no-repeat; */
@@ -210,7 +215,7 @@ button {
     background-color: #c78c06;
 }
 
-/* style the about section with flex on mobile version */
+/* style the mobile about section with flex */
 .about {
     background-color: #ffe6ac;
     padding-top: 10px;
@@ -231,15 +236,18 @@ button {
     padding-bottom: 10px;
 }
 
-/* float the img on the left on the mobile version */
+/* float the img on the left on the web version */
 @media screen and (min-width: 760px) {
-    .about .wrapper img {
+    .about {
+        /* display: flex; */
+    }
+    .about img {
         width: 444px;
         float: left;
     }
 }
 
-/* style the web services section with flex */
+/* style the mobile services section with flex */
 .services {
     padding-top: 15px;
     display: flex;
@@ -271,7 +279,7 @@ button {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-/* style the services section web with grid*/
+/* style the web services section with grid*/
 @media screen and (min-width: 760px) {
     .serviceboxes {
         display: grid;
@@ -309,8 +317,7 @@ button {
     }
 }
 
-
-/* style the web vision section */
+/* style the mobile vision section */
 .vision {
     background-image: url("/final-project/images/vision.jpg");
     background-position: center center;
@@ -333,7 +340,7 @@ button {
     padding-bottom: 10px;
 }
 
-/* style the web team section with grid*/
+/* style the mobile team section with grid*/
 .team {
     display: flex;
     flex-direction: column;
@@ -345,6 +352,10 @@ button {
     padding: 10px;
 }
 
+.team h5 {
+    border-bottom: 2px solid #c78c06;
+}
+
 .team p {
     padding-top: 10px;
 }
@@ -354,9 +365,8 @@ button {
     padding-top: 10px;
 }
 
-/* style the mobile team section with grid*/
+/* style the web team section with grid*/
 @media screen and (min-width: 760px) {
-
     .team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -387,11 +397,14 @@ button {
     }
 }   
 
-/* style the web contact section */
+/* style the mobile contact section */
 .contact {
     padding-top: 50px;
 }
 
+.contact h2 {
+    padding-bottom: 10px;
+}
 .message input, .message textarea {
     width: 100%;
 }
@@ -403,10 +416,6 @@ button {
     padding: 3px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.team h5 {
-    border-bottom: 2px solid #c78c06;
 }
 
 /* style the timetable */
@@ -433,6 +442,40 @@ iframe {
     height: 300px;
 }
 
+/* style the web contact section with grid*/
+@media screen and (min-width: 760px) {
+    .info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(260px, 150px);  
+        grid-template-areas: 
+        "message message location location"
+        "hours hours hours hours"; 
+    }
+
+    .message {
+        grid-area: message;
+        width: auto;
+    }
+    .message form input, .message form textarea {
+        width: 43vw;
+    }
+    .hours {
+        grid-area: hours;
+        /* padding: 0 10; */
+    }
+
+    .location {
+        grid-area: location;
+    }
+    .location iframe {
+        height: 250px;
+    }
+
+    .hours {
+        /* height: 150px; */
+    }
+} 
 /* style the footer */
 footer p {
     background-color: #222;
@@ -448,4 +491,5 @@ footer p {
 .lastline a {
     color: #c78c06;
 }
+
 
