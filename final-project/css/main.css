@@ -52,7 +52,7 @@ table {
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f6f4ee;
+    background-color: white;
     line-height: 1.5;
 }
 
@@ -70,6 +70,11 @@ h3 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+h5 {
+    font-weight: bold;
+}
+
 /* set the wrapper width of the whole body */
 .wrapper {
     /* width: 900px; */
@@ -106,9 +111,11 @@ header .home {
 .find form {
     align-items: center;
     /* width: 100%; */
+    padding-top: 10px;
     padding-bottom: 15px;
     display: flex;
 }
+
 .find form input {
     width: 97%;
     height: 22px;
@@ -179,6 +186,7 @@ button {
     padding-bottom: 10px;
 }
 
+/* style the web services section with flex */
 .services {
     padding-top: 15px;
     display: flex;
@@ -202,13 +210,14 @@ button {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-
+/* style the web vision section */
 .vision {
     background-image: url("/final-project/images/vision.jpg");
     background-position: center center;
     background-size: cover;
     padding-top: 30px;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .vision h3, .vision p {
@@ -224,17 +233,46 @@ button {
     padding-bottom: 10px;
 }
 
+/* style the web team section with flex */
+.team {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px; */
+}
 
+.johnbio, .bobbio {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
 
+.johnspic, .bobspic {
+    width: 100%;
+}
 
+/* style the web contact section */
+.contact {
+    padding-top: 50px;
+}
 
+.contact h3 {
+    /* padding-top: 10px; */
+}
 
+.info {
+    /* display: table-column; */
+}
 
+.message input, .message textarea {
+    width: 100%;
+}
 
-
-
-
-
+.contact .info .message button {
+    background-color: black;
+    color: #c78c06;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 
 
