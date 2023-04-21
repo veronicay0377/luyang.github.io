@@ -411,6 +411,10 @@ footer p {
         clear: both; 
     }
 
+    .flo img {
+        padding-bottom: 0;
+    }
+
     /* style the web services section with grid*/
     .serviceboxes {
         display: grid;
