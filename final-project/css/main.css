@@ -81,14 +81,6 @@ h5 {
     padding: 0 10px;
 }
 
-/* style the web wrapper width */
-@media screen and (min-width: 760px) {
-    .wrapper {
-        width: 80vw;
-        max-width: 1200px;
-    }
-}
-
 /* style the mobile navigation section */
 header {
     background-color: #222;
@@ -130,43 +122,6 @@ header .home {
     border: 1px solid #c78c06 ;
     color: #c78c06;
     padding: 5px;
-}
-
-@media screen and (min-width: 760px) {
-    .navigation {
-      text-align: center;
-      display: flex;
-      justify-content: space-between;
-      padding: 40px 20px;
-    }
-
-    .logocontainer {
-        width: 98px;
-        height: 98px;
-    }
-
-    .navlist {
-        display: flex;
-        justify-content: space-around;
-        margin: 22px 20px;
-        padding-left: 2vw;
-    }
-
-    .navlist li {
-        background-color: #222;
-        justify-content: space-between;
-        padding: 15px 3vw;
-        width: max-content;
-    }
-
-    .navlist .home {
-        background-color: #c78c06;
-    }
-
-    .navigation .find {
-        margin-top: 26px;
-        width: 15vw;
-    }
 }
 
 /* style the mobile welcome section with background image*/
@@ -214,9 +169,9 @@ button {
     padding-bottom: 20px;
 }
 
-.about .wrapper {
-    /* padding: 5px; */
-}
+/* .about .wrapper {
+    padding: 5px;
+} */
 
 .about img {
     width: 100%;
@@ -225,15 +180,6 @@ button {
 
 .about h2 {
     padding-bottom: 10px;
-}
-
-/* float the img on the left on the web version */
-@media screen and (min-width: 760px) {
-    .about img {
-        width: 444px;
-        float: left;
-        padding-right: 10px;
-    }
 }
 
 /* style the mobile services section with flex */
@@ -268,47 +214,6 @@ button {
 .services button {
     margin-left: 10px;
     margin-bottom: 10px;
-}
-/* style the web services section with grid*/
-@media screen and (min-width: 760px) {
-    .serviceboxes {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);   
-    }
-
-    .digital {
-        grid-column: 1 / span 3;
-        margin-right: 5px;
-    }
-    
-    .marketing {
-        grid-column: 4 / span 3;
-        margin-left: 5px;
-      }
-    
-    .video {
-        grid-column: 1 / span 2;
-        grid-row: 2 / span 2;
-        margin-right: 6px;
-    }
-
-    .web {
-        grid-column: 3 / span 2;
-        grid-row: 2 / span 2;
-        margin-left: 3px;
-        margin-right: 3px;
-    }
-
-    .print {
-        grid-column: 5 / span 2;
-        grid-row: 2 / span 2;
-        margin-left: 6px;
-    }
-
-    .serviceboxes h3 {
-        width: max-content;
-    }
 }
 
 /* style the mobile vision section */
@@ -359,38 +264,6 @@ button {
     padding-top: 10px;
 }
 
-/* style the web team section with grid*/
-@media screen and (min-width: 760px) {
-    .team {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);  
-        grid-template-areas: 
-        "johnspic johnbio"
-        "bobbio bobspic"; 
-    }
-
-    .johnspic {
-        grid-area: johnspic;
-        padding-top: 0;
-    }
-
-    .johnbio {
-        grid-area: johnbio;
-        padding: 0px 10px;
-    }
-
-    .bobbio {
-        grid-area: bobbio;
-        padding: 0px 10px;
-    }
-
-    .bobspic {
-        grid-area: bobspic;
-        padding-top: 0;
-    }
-}   
-
 /* style the mobile contact section */
 .contact {
     padding-top: 50px;
@@ -436,6 +309,168 @@ iframe {
     height: 300px;
 }
 
+/* style the footer */
+footer p {
+    background-color: #222;
+    color: #c78c06;
+    padding: 15px;
+    padding-top: 20px;
+}
+
+.lastline {
+    padding-top: 0;
+}
+
+.lastline a {
+    color: #c78c06;
+}
+
+/* style the web wrapper width */
+@media screen and (min-width: 760px) {
+    .wrapper {
+        width: 80vw;
+        max-width: 1200px;
+    }
+}
+
+/* style the web navigation with flex */
+@media screen and (min-width: 760px) {
+    .navigation {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 20px;
+    }
+
+    .logocontainer {
+        width: 98px;
+        height: 98px;
+    }
+
+    .navlist {
+        display: flex;
+        justify-content: space-around;
+        margin: 22px 20px;
+        padding-left: 2vw;
+    }
+
+    .navlist li {
+        background-color: #222;
+        justify-content: space-between;
+        padding: 15px 3vw;
+        width: max-content;
+    }
+
+    .navlist .home {
+        background-color: #c78c06;
+    }
+
+    .navigation .find {
+        margin-top: 26px;
+        width: 15vw;
+        min-width: max-content;
+    }
+}
+
+/* float the img on the left on the web version */
+@media screen and (min-width: 760px) {
+    /* .about .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about .flo {
+        width: 40vw; 
+        margin-right: 1rem;
+    } */
+
+    .about .flo img {
+        width: 40vw;
+        float: left;
+        padding-right: 1rem;
+    }
+    
+    .about .flo ::after {
+        content: "";
+        clear: both;
+        display: contents;
+    }
+}
+
+/* style the web services section with grid*/
+@media screen and (min-width: 760px) {
+    .serviceboxes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);   
+    }
+
+    .digital {
+        grid-column: 1 / span 3;
+        margin-right: 5px;
+    }
+    
+    .marketing {
+        grid-column: 4 / span 3;
+        margin-left: 5px;
+      }
+    
+    .video {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+        margin-right: 6px;
+    }
+
+    .web {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 2;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .print {
+        grid-column: 5 / span 2;
+        grid-row: 2 / span 2;
+        margin-left: 6px;
+    }
+
+    .serviceboxes h3 {
+        width: max-content;
+    }
+}
+
+/* style the web team section with grid*/
+@media screen and (min-width: 760px) {
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);  
+        grid-template-areas: 
+        "johnspic johnbio"
+        "bobbio bobspic"; 
+    }
+
+    .johnspic {
+        grid-area: johnspic;
+        padding-top: 0;
+    }
+
+    .johnbio {
+        grid-area: johnbio;
+        padding: 0px 10px;
+    }
+
+    .bobbio {
+        grid-area: bobbio;
+        padding: 0px 10px;
+    }
+
+    .bobspic {
+        grid-area: bobspic;
+        padding-top: 0;
+    }
+}   
+
 /* style the web contact section with grid*/
 @media screen and (min-width: 760px) {
     .info {
@@ -465,20 +500,4 @@ iframe {
     .location iframe {
         height: 240px;
     }
-} 
-
-/* style the footer */
-footer p {
-    background-color: #222;
-    color: #c78c06;
-    padding: 15px;
-    padding-top: 20px;
-}
-
-.lastline {
-    padding-top: 0;
-}
-
-.lastline a {
-    color: #c78c06;
 }
