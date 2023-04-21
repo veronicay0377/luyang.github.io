@@ -84,7 +84,7 @@ h5 {
 /* style the web wrapper width */
 @media screen and (min-width: 760px) {
     .wrapper {
-        width: 90vw;
+        width: 80vw;
     }
 }
 
@@ -140,7 +140,6 @@ header .home {
     }
 
     .logocontainer {
-        background-color: none;
         width: 98px;
         height: 98px;
     }
@@ -149,13 +148,13 @@ header .home {
         display: flex;
         justify-content: space-around;
         margin: 22px 20px;
+        padding-left: 2vw;
     }
 
     .navlist li {
         background-color: #222;
         justify-content: space-between;
-        /* height: 98px; */
-        padding: 15px 30px;
+        padding: 15px 3vw;
         width: max-content;
     }
 
@@ -215,12 +214,11 @@ button {
 }
 
 .about .wrapper {
-    display: flex;
-    flex-direction: column;
     /* padding: 5px; */
 }
 
 .about img {
+    width: 100%;
     padding-bottom: 15px;
 }
 
@@ -233,6 +231,11 @@ button {
     .about img {
         width: 444px;
         float: left;
+        padding-right: 10px;
+    }
+
+    .abouttext {
+        /* margin-left: 10px; */
     }
 }
 
@@ -305,6 +308,10 @@ button {
         grid-row: 2 / span 2;
         margin-left: 6px;
     }
+
+    .serviceboxes h3 {
+        width: max-content;
+    }
 }
 
 /* style the mobile vision section */
@@ -373,12 +380,12 @@ button {
 
     .johnbio {
         grid-area: johnbio;
-        padding: 0 10;
+        padding: 0px 10px;
     }
 
     .bobbio {
         grid-area: bobbio;
-        padding: 0 10;
+        padding: 0px 10px;
     }
 
     .bobspic {
@@ -437,7 +444,7 @@ iframe {
     .info {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(260px, 150px);  
+        grid-template-rows: 270px 160px;  
         grid-template-areas: 
         "message message location location"
         "hours hours hours hours"; 
@@ -448,7 +455,7 @@ iframe {
         width: auto;
     }
     .message form input, .message form textarea {
-        width: 43vw;
+        width: 38vw;
     }
     .hours {
         grid-area: hours;
@@ -459,13 +466,10 @@ iframe {
         grid-area: location;
     }
     .location iframe {
-        height: 250px;
-    }
-
-    .hours {
-        /* height: 150px; */
+        height: 240px;
     }
 } 
+
 /* style the footer */
 footer p {
     background-color: #222;
