@@ -124,6 +124,11 @@ header .home {
     padding: 5px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* style the mobile welcome section with background image*/
 .welcome {
     background-image: url("../images/main-banner.jpg");
@@ -272,6 +277,7 @@ button {
 .contact h2 {
     padding-bottom: 10px;
 }
+
 .message input, .message textarea {
     width: 100%;
 }
@@ -323,25 +329,34 @@ footer p {
 
 .lastline a {
     color: #c78c06;
+} 
+
+@media screen and (min-width: 1000px) and (max-width: 1200) {
+    .navlist li {
+        font-size: 0.8rem;
+    }
 }
 
-/* style the web wrapper width */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1200px) {
     .wrapper {
-        width: 80vw;
-        max-width: 1200px;
+        width: 1200px;
     }
 }
 
-/* style the web navigation with flex */
 @media screen and (min-width: 760px) {
+    /* style the web wrapper width */
+    /* .wrapper {
+        max-width: 1200px;
+    } */
+    
+    /* style the web navigation with flex */
     .navigation {
-      text-align: center;
-      display: flex;
-      justify-content: space-between;
-      padding: 40px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 10px;
     }
-
+  
     .logocontainer {
         width: 98px;
         height: 98px;
@@ -350,15 +365,18 @@ footer p {
     .navlist {
         display: flex;
         justify-content: space-around;
-        margin: 22px 20px;
-        padding-left: 2vw;
+        margin: 10px 30px;
+        /* padding-left: 2vw; */
     }
 
     .navlist li {
         background-color: #222;
         justify-content: space-evenly;
-        padding: 15px 3vw;
+        /* padding: 15px 3vw; */
+        padding: 15px;
         width: max-content;
+        margin: 1rem;
+        /* margin-left: ; */
     }
 
     .navlist .home {
@@ -367,13 +385,11 @@ footer p {
 
     .navigation .find {
         margin-top: 26px;
-        width: 15vw;
-        min-width: max-content;
+        /* width: 15vw; */
+        /* min-width: max-content; */
     }
-}
 
-/* float the img on the left on the web version */
-@media screen and (min-width: 760px) {
+    /* float the img on the left on the web version */
     /* .about .wrapper {
         display: flex;
         flex-direction: row;
@@ -384,25 +400,19 @@ footer p {
         margin-right: 1rem;
     } */
 
-    .about .flo img {
-        width: 40vw;
+    .flo {
+        width: 50%;
         float: left;
         padding-right: 1rem;
     }
 
-    /* .about ::after {
+    .clearfix::after {
         content: "";
-        display: content;
-        clear: both;
-    } */
-
-    .services {
-        clear: both;
+        display: block;
+        clear: both; 
     }
-}
 
-/* style the web services section with grid*/
-@media screen and (min-width: 760px) {
+    /* style the web services section with grid*/
     .serviceboxes {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -441,10 +451,8 @@ footer p {
     .serviceboxes h3 {
         width: max-content;
     }
-}
 
-/* style the web team section with grid*/
-@media screen and (min-width: 760px) {
+    /* style the web team section with grid*/
     .team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -473,14 +481,12 @@ footer p {
         grid-area: bobspic;
         padding-top: 0;
     }
-}   
 
-/* style the web contact section with grid*/
-@media screen and (min-width: 760px) {
+    /* style the web contact section with grid*/
     .info {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 270px 160px;  
+        grid-template-rows: 270px 170px;  
         grid-template-areas: 
         "message message location location"
         "hours hours hours hours"; 
@@ -491,18 +497,23 @@ footer p {
         width: auto;
     }
     .message form input, .message form textarea {
-        width: 38vw;
+        /* width: 38vw; */
+        width: 98%;
     }
+
     .hours {
         grid-area: hours;
         margin-top: 1rem;
+        /* margin-bottom: 1rem; */
     }
 
     .location {
         grid-area: location;
+        text-align: left;
     }
     .location iframe {
-        width: 40vw;
-        height: 240px;
+        /* width: 40vw; */
+        width: 98%;
+        height: 86%;
     }
 }
