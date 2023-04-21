@@ -337,6 +337,7 @@ footer p {
     }
 }
 
+/* style the web wrapper width */
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 1200px;
@@ -344,7 +345,6 @@ footer p {
 }
 
 @media screen and (min-width: 760px) {
-    /* style the web wrapper width */
     /* .wrapper {
         max-width: 1200px;
     } */
@@ -376,7 +376,6 @@ footer p {
         padding: 15px;
         width: max-content;
         margin: 1rem;
-        /* margin-left: ; */
     }
 
     .navlist .home {
@@ -469,12 +468,12 @@ footer p {
 
     .johnbio {
         grid-area: johnbio;
-        padding: 0px 10px;
+        padding: 10px 10px;
     }
 
     .bobbio {
         grid-area: bobbio;
-        padding: 0px 10px;
+        padding: 10px 10px;
     }
 
     .bobspic {
