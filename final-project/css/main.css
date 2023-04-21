@@ -166,7 +166,7 @@ button {
 .about {
     background-color: #ffe6ac;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 /* .about .wrapper {
@@ -390,10 +390,14 @@ footer p {
         padding-right: 1rem;
     }
 
-    .about .flo ::after {
+    /* .about ::after {
         content: "";
+        display: content;
         clear: both;
-        display: contents;
+    } */
+
+    .services {
+        clear: both;
     }
 }
 
