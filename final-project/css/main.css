@@ -356,7 +356,7 @@ footer p {
 
     .navlist li {
         background-color: #222;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 15px 3vw;
         width: max-content;
     }
@@ -389,7 +389,7 @@ footer p {
         float: left;
         padding-right: 1rem;
     }
-    
+
     .about .flo ::after {
         content: "";
         clear: both;
@@ -498,6 +498,7 @@ footer p {
         grid-area: location;
     }
     .location iframe {
+        width: 40vw;
         height: 240px;
     }
 }
