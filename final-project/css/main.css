@@ -332,7 +332,7 @@ footer p {
 } 
 
 @media screen and (min-width: 1000px) and (max-width: 1200) {
-    .navlist li {
+    .navlist {
         font-size: 0.8rem;
     }
 }
@@ -353,7 +353,7 @@ footer p {
     .navigation {
         text-align: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 40px 10px;
     }
   
@@ -373,7 +373,7 @@ footer p {
         background-color: #222;
         justify-content: space-evenly;
         /* padding: 15px 3vw; */
-        padding: 15px;
+        padding: 15px 30px;
         width: max-content;
         margin: 1rem;
     }
