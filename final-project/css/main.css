@@ -79,6 +79,7 @@ h5 {
 .wrapper {
     margin: 0 auto; 
     padding: 0 10px;
+    max-width: 1200px;
 }
 
 /* style the mobile navigation section */
@@ -174,10 +175,6 @@ button {
     padding-bottom: 10px;
 }
 
-/* .about .wrapper {
-    padding: 5px;
-} */
-
 .about img {
     width: 100%;
     padding-bottom: 15px;
@@ -221,7 +218,7 @@ button {
     margin-bottom: 10px;
 }
 
-/* style the mobile vision section */
+/* style the mobile vision section with background image*/
 .vision {
     background-image: url("/final-project/images/vision.jpg");
     background-position: center center;
@@ -309,13 +306,13 @@ th {
     background-color: #ffe6ac;
 }
 
-/* style the map */
+/* style the map size */
 iframe {
     width: 100%;
     height: 300px;
 }
 
-/* style the footer */
+/* style the footer with background color */
 footer p {
     background-color: #222;
     color: #c78c06;
@@ -331,24 +328,15 @@ footer p {
     color: #c78c06;
 } 
 
-@media screen and (min-width: 1000px) and (max-width: 1200) {
+/* style the web version */
+/* style the nav font size at 1000px-1200px */
+@media screen and (min-width: 760px) and (max-width: 1200px) {
     .navlist {
         font-size: 0.8rem;
     }
 }
 
-/* style the web wrapper width */
-@media screen and (min-width: 1200px) {
-    .wrapper {
-        width: 1200px;
-    }
-}
-
-@media screen and (min-width: 760px) {
-    /* .wrapper {
-        max-width: 1200px;
-    } */
-    
+@media screen and (min-width: 760px) {   
     /* style the web navigation with flex */
     .navigation {
         text-align: center;
@@ -388,7 +376,7 @@ footer p {
         /* min-width: max-content; */
     }
 
-    /* float the img on the left on the web version */
+    /* float the img on the left on the web version with flex*/
     /* .about .wrapper {
         display: flex;
         flex-direction: row;
